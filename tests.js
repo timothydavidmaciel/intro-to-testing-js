@@ -30,7 +30,7 @@ describe('sayHello', function () {
     it('should return a string that says "Hello, Pat!"', function () {
         expect(sayHello("Pat")).toBe('Hello, Pat!');
     });
-    it('should return the string "Hello " with the argument and a "!" when executed', function () {
+    it("should return the string 'Hello, World!'", function () {
         expect(sayHello("")).toBe('Hello, ' + "" + '!');
     });
     it("should never return 'undefined' when called", function () {
