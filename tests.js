@@ -37,3 +37,12 @@ describe('sayHello', function () {
         expect(sayHello()).not.toBe(undefined);
     });
 });
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+it('should pass as a boolean regardless of input', function () {
+    expect(isFive(5 < 6)).toBe(Boolean())
+});
+});

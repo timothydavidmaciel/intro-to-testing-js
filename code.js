@@ -4,7 +4,9 @@ function helloWorld() {
 }
 
 function sayHello(x) {
-return "Hello, " + x + "!";
+    return "Hello, " + x + "!";
 }
 
-console.log(sayHello("timothy"));
+function isFive() {
+    return Boolean();
+};
