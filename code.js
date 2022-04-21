@@ -10,3 +10,7 @@ function sayHello(x) {
 function isFive() {
     return Boolean();
 };
+
+function isEven() {
+    return Boolean();
+}
