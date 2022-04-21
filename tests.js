@@ -79,7 +79,37 @@ describe('isEven', function () {
         expect(isEven(true || false)).toBe(Boolean());
     });
     it('should return false when called without an argument like isEven()', function () {
-    expect(isEven("")).toBe(Boolean());
-});
+        expect(isEven("")).toBe(Boolean());
+    });
 });
 
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(isVowel()).toBe(Boolean());
+    });
+    it('should return true when passing "a"', function () {
+        expect(!isVowel("a")).toBe(Boolean(true));
+    })
+    it('should return true when passing "A"', function () {
+        expect(!isVowel("A")).toBe(Boolean(true));
+    })
+    it('should return false when passing "y"', function () {
+        expect(isVowel("y")).toBe(Boolean(false));
+    })
+    it('should return false when passing "4"', function () {
+        expect(isVowel(4)).toBe(Boolean());
+    })
+    it('should return false when passing isVowel(true) or isVowel(false)', function () {
+        expect(isVowel(true || false)).toBe(Boolean());
+    })
+    it('should return false when passing "banana"', function () {
+        expect(isVowel("banana")).toBe(Boolean());
+    })
+    it('should return false when passing an empty string', function () {
+        expect(isVowel("")).toBe(Boolean());
+    });
+});
+
+// isVowel(true) or isVowel(false) both return false
+// isVowel("banana") returns false
+// isVowel() returns false

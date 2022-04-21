@@ -14,3 +14,7 @@ function isFive() {
 function isEven() {
     return Boolean();
 }
+
+function isVowel() {
+    return Boolean();
+}
